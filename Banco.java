@@ -35,6 +35,11 @@ public class Banco {
 
     System.out.printf("O saldo atual da sua conta é: R$%.2f\n", saldo);
   }
+
+  public static void limpaTela() {
+    System.out.print("\033[H\033[2J");
+    System.out.flush();
+  }
   
   public void menu(Banco cliente) {
     int opcao;
@@ -49,17 +54,22 @@ public class Banco {
 
       switch(opcao) {
         case 1:
+          limpaTela();
           System.out.println("Digite a quantia a ser sacada: R$");
           cliente.sacar(scan.nextDouble());
           break;
           case 2:
+          limpaTela();
           System.out.println("Digite a quantia a ser depositada: R$");
           cliente.depositar(scan.nextDouble());
           break;
           case 3:
+          limpaTela();
           cliente.exibirSaldo();
           break;
         case 4:
+          limpaTela();
+          System.out.print("Até logo!");
           return;
       }
     }
