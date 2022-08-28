@@ -7,7 +7,7 @@ public class Banco {
 
   Scanner scan = new Scanner(System.in);
 
-  public Banco(String nome, String cpf, double saldo) {
+  public Banco(String nome, String cpf) {
     this.nome = nome;
     this.cpf = cpf;
     this.saldo = 0;
@@ -42,6 +42,7 @@ public class Banco {
   }
   
   public void menu(Banco cliente) {
+    limpaTela();
     int opcao;
 
     while(true) {
@@ -58,12 +59,12 @@ public class Banco {
           System.out.println("Digite a quantia a ser sacada: R$");
           cliente.sacar(scan.nextDouble());
           break;
-          case 2:
+        case 2:
           limpaTela();
           System.out.println("Digite a quantia a ser depositada: R$");
           cliente.depositar(scan.nextDouble());
           break;
-          case 3:
+        case 3:
           limpaTela();
           cliente.exibirSaldo();
           break;
@@ -76,7 +77,7 @@ public class Banco {
   }
 
   public static void main(String[] args) {
-    Banco felipe = new Banco("Felipe", "015.259.571-63", 347.05);
+    Banco felipe = new Banco("Felipe", "015.259.571-63");
 
     felipe.menu(felipe);
   }
