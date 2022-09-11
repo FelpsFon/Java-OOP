@@ -33,10 +33,13 @@ public class Academia {
     switch (opcao) {
       case 1:
         peso = peso + 0.05;
+        break;
       case 2:
         peso = peso + 0.1;
+        break;
       case 3:
         peso = peso + 0.2;
+        break;
       default:
         System.out.println("Opção inválida!");
     }
@@ -46,10 +49,13 @@ public class Academia {
     switch (opcao) {
       case 1:
         peso = peso - 0.15;
+        break;
       case 2:
         peso = peso - 0.1;
+        break;
       case 3:
         peso = peso - 0.05;
+        break;
       default:
         System.out.println("Opção inválida!");
     }
@@ -72,6 +78,10 @@ public class Academia {
     return aimc;
   }
 
+  public void ExibirFicha() {
+    System.out.printf("--- %s ---\nIdade: %d\nPeso: %.2f\nAltura: %.2f\n", nome, idade, peso, altura);
+  }
+
   public static void main(String[] args) {
     Academia aluno1 = new Academia("Felipe Louzada", 19, 55.6, 1.61);
 
@@ -91,5 +101,7 @@ public class Academia {
 
     System.out.printf("O IMC atual de %s é: %.2f\n", aluno1.nome, aluno1.CalcularIMC());
     System.out.printf("O IMC de %s se encaixa na categoria: %s\n", aluno1.nome, aluno1.AvaliarIMC(aluno1.CalcularIMC()) );
+
+    aluno1.ExibirFicha();
   }
 }
