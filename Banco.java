@@ -1,4 +1,3 @@
-package sandboxSala;
 import java.util.Scanner;
 
 public class Banco {
