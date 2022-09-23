@@ -1,3 +1,4 @@
+package Atv1;
 import java.util.Scanner;
 
 // Felipe Louzada Guedes Carneiro da Fontoura - 2112130011

@@ -1,5 +1,5 @@
-import java.util.ArrayList;
-import java.util.List;
+// import java.util.ArrayList;
+// import java.util.List;
 import java.util.Scanner;
 
 public class teste {
@@ -19,7 +19,7 @@ public class teste {
     System.out.println(operacao);
   }
 
-  List operacaoElementos = new ArrayList<>();
+  //List operacaoElementos = new ArrayList<>();
 
   public static void main(String[] args) {
     teste executar = new teste("");
