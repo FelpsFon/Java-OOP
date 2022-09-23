@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 // Felipe Louzada Guedes Carneiro da Fontoura - 2112130011
 
 /*
@@ -19,6 +21,8 @@ public class Academia {
   int idade;
   String nome, aimc;
   double peso, altura, imc;
+
+  Scanner scan = new Scanner(System.in);
 
   // Construtor
   public Academia(String nome, int idade, double peso, double altura) {
