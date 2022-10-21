@@ -1,4 +1,4 @@
-package Static
+package Static;
 
 public class CasseStatic {
   static int i = 46;
