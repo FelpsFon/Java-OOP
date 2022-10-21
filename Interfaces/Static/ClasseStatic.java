@@ -1,6 +1,6 @@
 package Static;
 
-public class CasseStatic {
+public class ClasseStatic {
   static int i = 46;
   int j = 26;
 
