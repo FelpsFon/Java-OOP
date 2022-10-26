@@ -1,4 +1,3 @@
-package Polimorfismo;
 import java.util.Date;
 
 public abstract class Empregado {

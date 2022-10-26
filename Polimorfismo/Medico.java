@@ -1,5 +1,3 @@
-package Polimorfismo;
-
 public class Medico extends Empregado {
   private String crm;
 
